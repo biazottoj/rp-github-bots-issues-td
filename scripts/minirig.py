@@ -13,14 +13,15 @@ import requests
 from git import Repo
 import pydriller as pdl
 
+from helpers import requests_retry_session
+
 
 class CachedRequests:
     def __init__(self, cache_dir=None):
         self.cache_dir = Path(cache_dir if cache_dir else tempfile.mkdtemp())
     
     def _request(self, url, headers):
-        response = requests.get(url, headers=headers)
-        
+        response = requests_retry_session().get(url, headers=headers)       
         if response.status_code == 200:
             return response.json()
         elif response.status_code in [403, 429]:
@@ -36,7 +37,7 @@ class CachedRequests:
             if reset_time is not None:
                 sleep_time = reset_time - time.time()
                 logging.warning(f'API rate limit exceeded, sleeping for {sleep_time} seconds')
-                time.sleep(sleep_time)
+                time.sleep(sleep_time if sleep_time >= 0 else 0)
                 return self._request(url, headers)
             else:
                 logging.error('Unable to find rate limit reset time')
@@ -61,9 +62,10 @@ class CachedRequests:
         if not jsonpath.exists():
             logging.debug(f'Caching {url}')
             jsonpath.parent.mkdir(parents=True, exist_ok=True)
-            with jsonpath.open('w') as f:
+            with jsonpath.open('w', encoding='utf-8') as f:
                 res = self._request(url,headers=headers)
                 json.dump(res,f)
+        #print(jsonpath)
         with jsonpath.open() as f:
             return json.load(f)
     
@@ -114,10 +116,10 @@ class GHRequests(CachedRequests):
         endpoint = f'/repos/{o}/{r}/commits/{commit_sha}'
         return self._get(endpoint)
 
-    def get_issue_info(self,issue_number,owner=None, repo=None):
+    def get_issue_info(self,issue_number,owner=None, repo=None, force=False):
         (o,r) = self._parse_details(owner,repo)
         endpoint = f'/repos/{o}/{r}/issues/{issue_number}'
-        return self._get(endpoint)
+        return self._get(endpoint,force=force)
 
     def get_number_issues_involving_user(self,username):
         endpoint = f'/search/issues?q=involves:{username}+is:issue'
@@ -127,6 +129,11 @@ class GHRequests(CachedRequests):
         endpoint = f'{url}&page={page}'
         return self._get(endpoint)
 
+    def get_comments_per_issue(self,issue_number,owner=None, repo=None, force=False):
+        (o,r) = self._parse_details(owner,repo)
+        endpoint = f'/repos/{o}/{r}/issues/{issue_number}/comments'
+        return self._get(endpoint,force=force)
+    
     def get_issues_involving_user(self,username,from_date=None):
         results_limit = 1000
         per_page = 100
@@ -147,7 +154,6 @@ class GHRequests(CachedRequests):
         
         if total_pages > results_limit//per_page:
             yield from self.get_issues_involving_user(username,issue['updated_at'])
-
 
 class JiraRequests(CachedRequests):
     def __init__(self, api_url, cache_dir=None):
@@ -276,14 +282,14 @@ def in_list_count(cotainee, container):
 
 
 def load_csv_dataset(filename, dialect='excel'):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, dialect=dialect)
         return [row for row in reader]
 
     
 def save_csv_dataset(filename, data, header=None):
     header = header if header else list(data[0].keys())
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding="utf-8") as f:
         writer = csv.DictWriter(f,fieldnames=header)
         writer.writeheader()
         for d in data:
