@@ -121,20 +121,20 @@ class GHRequests(CachedRequests):
         endpoint = f'/repos/{o}/{r}/issues/{issue_number}'
         return self._get(endpoint,force=force)
 
-    def get_number_issues_involving_user(self,username):
+    def get_number_issues_involving_user(self,username, force=False):
         endpoint = f'/search/issues?q=involves:{username}+is:issue'
-        return self._get(endpoint)['total_count']
+        return self._get(endpoint, force=force)['total_count']
     
-    def _get_page(self,url,page):
+    def _get_page(self,url,page, force=False):
         endpoint = f'{url}&page={page}'
-        return self._get(endpoint)
+        return self._get(endpoint, force=force)
 
     def get_comments_per_issue(self,issue_number,owner=None, repo=None, force=False):
         (o,r) = self._parse_details(owner,repo)
         endpoint = f'/repos/{o}/{r}/issues/{issue_number}/comments'
         return self._get(endpoint,force=force)
     
-    def get_issues_involving_user(self,username,from_date=None):
+    def get_issues_involving_user(self,username,from_date=None,force=False):
         results_limit = 1000
         per_page = 100
         if from_date:
@@ -142,18 +142,18 @@ class GHRequests(CachedRequests):
         else:
             endpoint = f'/search/issues?q=involves:{username}+is:issue&sort=updated&order=asc&per_page={per_page}'
         
-        page_1 = self._get_page(endpoint,1)
+        page_1 = self._get_page(endpoint,1,force=force)
         total_pages = -(page_1['total_count'] // -per_page) # cieling division
 
         for issue in page_1['items']:
             yield issue
         
         for page in range(2, min(results_limit//per_page,total_pages)+1):
-            for issue in self._get_page(endpoint,page)['items']:
+            for issue in self._get_page(endpoint,page, force=force)['items']:
                 yield issue
         
         if total_pages > results_limit//per_page:
-            yield from self.get_issues_involving_user(username,issue['updated_at'])
+            yield from self.get_issues_involving_user(username,issue['updated_at'],force=force)
 
 class JiraRequests(CachedRequests):
     def __init__(self, api_url, cache_dir=None):
