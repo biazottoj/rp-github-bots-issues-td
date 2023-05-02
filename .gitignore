@@ -6,3 +6,4 @@
 gh-token.txt
 data/*
 !data/bots-dataset.csv
+model/*
