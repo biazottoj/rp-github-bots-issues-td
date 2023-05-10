@@ -5,7 +5,7 @@ import string
 import fasttext
 import nltk
 import numpy as np
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 
 class Model1_IssueTracker_Li2022_ESEM:
     """
@@ -15,7 +15,7 @@ class Model1_IssueTracker_Li2022_ESEM:
     def __init__(self, weight_file, word_embedding_file):
         # Load the model and its weights
         print('Loading model {}...'.format(weight_file))
-        self._model = load_model(weight_file)
+        self._model = tf.keras.models.load_model(weight_file)
         self._size_of_input = self._model.layers[0].get_output_at(0).get_shape()[1]
 
         # Load the FastText word embeddings
@@ -71,7 +71,7 @@ class Model1_IssueTracker_Li2022_ESEM:
                 x_test.append(self._word_embedding_cache[word])
         return np.array([x_test])
 
-    def predict(self, comment):
+    def label(self, comment):
         """
         Classify a single comment
 
@@ -85,5 +85,6 @@ class Model1_IssueTracker_Li2022_ESEM:
         y_pred_bool = np.argmax(y_pred, axis=1)
 
         # Print the prediction results
+        tf.keras.backend.clear_session()
         return self._labels[y_pred_bool[0]]
 
