@@ -16,6 +16,7 @@ class Model1_IssueTracker_Li2022_ESEM:
         # Load the model and its weights
         print('Loading model {}...'.format(weight_file))
         self._model = tf.keras.models.load_model(weight_file)
+        self._model.trainable = False
         self._size_of_input = self._model.layers[0].get_output_at(0).get_shape()[1]
 
         # Load the FastText word embeddings
@@ -38,7 +39,8 @@ class Model1_IssueTracker_Li2022_ESEM:
         :return:
         """
         # Remove comment delimiters and convert to lowercase
-        comment = re.sub('(//)|(/\\*)|(\\*/)', '', comment).lower()
+        comment = re.sub('(//)|(/\\*)|(\\*/)', '', comment)
+        comment = comment.replace('\ud83d', '').lower()
         # Tokenize comment into sentences and words
         tokens_sentences = [self._tokenizer_words.tokenize(t) for t in nltk.sent_tokenize(comment)]
         tokens = [word for t in tokens_sentences for word in t]
@@ -64,12 +66,17 @@ class Model1_IssueTracker_Li2022_ESEM:
         x_test = []
         for word in new_sentence:
             if word not in self._word_embedding_cache:
+                print(word)
                 word_embed = self._word_embedding[word]
                 self._word_embedding_cache[word] = word_embed
                 x_test.append(word_embed)
             else:
                 x_test.append(self._word_embedding_cache[word])
         return np.array([x_test])
+    
+    def clear_model_session(self):
+        tf.keras.backend.clear_session()
+
 
     def label(self, comment):
         """
@@ -85,6 +92,20 @@ class Model1_IssueTracker_Li2022_ESEM:
         y_pred_bool = np.argmax(y_pred, axis=1)
 
         # Print the prediction results
-        tf.keras.backend.clear_session()
         return self._labels[y_pred_bool[0]]
 
+    def label_sections_in_batch(self, comments, batch_size):
+        """
+        Classify a single comment
+
+        :param comment:
+        """
+        # Prepare the comment for classification
+        input_x = np.concatenate([self.prepare_comments(x) for x in comments])
+        
+        # Make predictions using the model
+        y_pred = self._model.predict(input_x, batch_size=batch_size, verbose=1)
+        y_pred_ints = np.argmax(y_pred, axis=1)
+
+        # Print the prediction results
+        return [self._labels[y] for y in y_pred_ints]
