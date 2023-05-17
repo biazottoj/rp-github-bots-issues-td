@@ -10,5 +10,5 @@ RUN jupyter lab build --dev-build=False --minimize=False
 # Bootstrap environment
 WORKDIR /workspace
 EXPOSE 8888
-
 CMD ["jupyter", "lab", "--ip=*", "--port=8888", "--no-browser", "--allow-root", "--LabApp.token=''"]
+#CMD ["pyrhon", "./script.py"]
