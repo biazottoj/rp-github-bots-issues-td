@@ -1,10 +1,5 @@
 account,issue_count,n-projects,issues-opening,issues-closing,n-comments,issues-commenting,functionality-descriptive,issues-analyzed,create,comment,label,close,trigger-automated,trigger-manual,trigger-both,other-remarks,assign,completed
-glassfishrobot,56400,125,42506,0,338245,41256,comments when a issues has a long time of inactivity|closes issues after a certain time of inactivity|checks the conformity of commits messages|,"https://github.com/spinnaker/keel/issues/1005
-https://github.com/spinnaker/keel/issues/1236
-https://github.com/spinnaker/keel/issues/1392
-https://github.com/spinnaker/keel/pull/2024
-https://github.com/spinnaker/spinnaker/issues/1476
-https://github.com/spinnaker/spinnaker/issues/3934",0,1,1,1,1,0,0,-,0.0,1.0
+glassfishrobot,56400,125,42506,0,338245,41256,comments when a issues has a long time of inactivity|closes issues after a certain time of inactivity|checks the conformity of commits messages|,-,0,1,1,1,1,0,0,-,0.0,1.0
 k8s-ci-robot,52160,302,0,0,66298,49644,-,"https://github.com/a2425rdl/anawey/issues/2
 https://github.com/bigchaindb/org/issues/34
 https://github.com/cncf/apisnoop/issues/280
@@ -199,7 +194,7 @@ hashibot,3238,63,0,0,0,0,it migrates issues from a project to another|informs us
 https://github.com/cloudflare/terraform-provider-cloudflare/issues/5
 https://github.com/hashicorp/terraform/issues/13039
 https://github.com/hashicorp/terraform/issues/15468
-https://github.com/hashicorp/terraform/issues/19625",0,1,1,1,0,0,0,"it locks the conversation, not sure if it is a functionality.",0.0,1.0
+https://github.com/hashicorp/terraform/issues/19625",0,1,1,1,1,0,0,"it locks the conversation, not sure if it is a functionality.",0.0,1.0
 miq-bot,3114,72,0,0,0,0,close issues considering a certain time of inactivity|label issues after commands,"https://github.com/ansible/ansible_tower_client_ruby/issues/115
 https://github.com/ansible/ansible_tower_client_ruby/issues/121
 https://github.com/Fryguy/sandbox/issues/1
