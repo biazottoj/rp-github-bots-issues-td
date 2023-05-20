@@ -66,7 +66,6 @@ class Model1_IssueTracker_Li2022_ESEM:
         x_test = []
         for word in new_sentence:
             if word not in self._word_embedding_cache:
-                print(word)
                 word_embed = self._word_embedding[word]
                 self._word_embedding_cache[word] = word_embed
                 x_test.append(word_embed)
