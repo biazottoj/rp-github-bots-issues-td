@@ -8,6 +8,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as func
 from torch import autograd
+import numpy as np
 
 DEF_COMMENT = 'code_comment'
 DEF_COMMIT = 'commit_message'
@@ -23,20 +24,23 @@ class TextCNNMultitask(nn.Module):
 
     """
 
-    def __init__(self, params):
+    def __init__(self):
         """
         Init function
 
         @param params:
         """
         super(TextCNNMultitask, self).__init__()
-        self.params = params
+        #self.params = params
+        self.kernel_sizes = [1,2,3,4,5]
+        self.kernel_num = 200
+        self.embed_dim = 300
 
         # hyper-parameters
-        self.list_conv = nn.ModuleList([nn.Conv2d(1, self.params.kernel_num, (size, self.params.embed_dim))
-                                        for size in self.params.kernel_sizes])
-        self.dropout = nn.Dropout(params.dropout)
-        self.fcs = nn.ModuleList([nn.Linear(len(self.params.kernel_sizes) * self.params.kernel_num, class_num)
+        self.list_conv = nn.ModuleList([nn.Conv2d(1, self.kernel_num, (size, self.embed_dim))
+                                        for size in self.kernel_sizes])
+        self.dropout = nn.Dropout(0.5)
+        self.fcs = nn.ModuleList([nn.Linear(len(self.kernel_sizes) * self.kernel_num, class_num)
                                   for class_num in [len(DEF_LABELS) for _ in range(len(DEF_MAPPING.keys()))]])
 
     def forward(self, x):
@@ -68,21 +72,26 @@ class Model1_IssueTracker_Li2022_TSE:
     Self-admitted technical debt detector
     """
 
-    def __init__(self, params):
+    def __init__(self, embed,snapshot):
         """
         Initialization
 
         """
         # init
-        self.params = params
+        #self.params = params
         self.model = None
+
+        self.embed_vectors = embed
+        self.snapshot = snapshot
+        self.cuda = torch.cuda.is_available()
+        self.device = -1
 
         # load torch model
         self.load_model()
         # load word embedding
         self._pure_word_embedding = {}
         self._pure_cache_word_embedding = {}
-        self._pure_word_embedding = fasttext.load_model(self.params.embed_vectors)
+        self._pure_word_embedding = fasttext.load_model(self.embed_vectors)
 
         self._tokenizer_words = nltk.TweetTokenizer()
         self._punctuation = string.punctuation.replace('!', '').replace('?', '')
@@ -96,13 +105,13 @@ class Model1_IssueTracker_Li2022_TSE:
 
         @return:
         """
-        print('\nLoading torch model from {}...'.format(self.params.snapshot))
-        model = TextCNNMultitask(params=self.params)
+        print('\nLoading torch model from {}...'.format(self.snapshot))
+        model = TextCNNMultitask()
 
-        if self.params.cuda:
-            pretrained_dict = torch.load(self.params.snapshot)
+        if self.cuda:
+            pretrained_dict = torch.load(self.snapshot)
         else:
-            pretrained_dict = torch.load(self.params.snapshot, map_location=torch.device('cpu'))
+            pretrained_dict = torch.load(self.snapshot, map_location=torch.device('cpu'))
 
         # init ignored params
         set_ignored_param = {'embed.weight'}
@@ -118,8 +127,8 @@ class Model1_IssueTracker_Li2022_TSE:
         model.load_state_dict(model_dict)
 
         # if possible, enable cuda
-        if self.params.cuda:
-            torch.cuda.set_device(self.params.device)
+        if self.cuda:
+            torch.cuda.set_device(self.device)
             self.model = model.cuda()
         else:
             self.model = model
@@ -166,6 +175,8 @@ class Model1_IssueTracker_Li2022_TSE:
         return stripped
 
     def predict(self, comment, tp=None):
+        DEF_MAPPING = {DEF_ISSUE: 0, DEF_COMMIT: 1, DEF_COMMENT: 2, DEF_PULL: 3}
+        DEF_LABELS = ['non-SATD', 'code|design-debt', 'requirement-debt', 'documentation-debt', 'test-debt']
         """
         Classify a single comment
 
@@ -187,12 +198,24 @@ class Model1_IssueTracker_Li2022_TSE:
 
         x = autograd.Variable(torch.tensor(embed_text))
         x = x.unsqueeze(0)
-        if self.params.cuda:
+        if self.cuda:
             x = x.cuda()
         output = self.model(x)
         _, predicted = torch.max(output[DEF_MAPPING[tp]], 1)
 
         return DEF_LABELS[predicted.item()]
+
+    def predict_in_batch(self,tp='issue', comments=[], batch_size=128):
+
+        # Prepare the comment for classification
+        input_x = np.concatenate([self.comment_pre_processing(x) for x in comments])
+        
+        # Make predictions using the model
+        y_pred = self.model(input_x, batch_size=batch_size, verbose=1)
+        y_pred_ints = np.argmax(y_pred, axis=1)
+    
+        # Print the prediction results
+        return [DEF_LABELS[y] for y in y_pred_ints]
 
 
 def simple_test(dt):

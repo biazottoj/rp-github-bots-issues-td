@@ -1,6 +1,28 @@
-account,issue_count,n-projects,issues-opening,issues-closing,n-comments,issues-commenting,functionality-descriptive,issues-analyzed,create,comment,label,close,trigger-automated,trigger-manual,trigger-both,other-remarks,assign,completed,is-bot
-glassfishrobot,56400,125,42506,0,338245,41256,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-k8s-ci-robot,52160,302,0,0,66298,49644,0,0,0,0,0,0,0,0,0,0,0.0,0.0,1
+account,issue_count,n-projects,issues-opening,issues-closing,n-comments,issues-commenting,functionality-descriptive,issues-analyzed,create,comment,label,close,trigger-automated,trigger-manual,trigger-both,other-remarks,assign,completed,is-bot,merge-pr,create-milestone,reopen,lock
+glassfishrobot,56400,125,42506,0,338245,41256,imports issues from jira|it creates issues as placeholders for problems related to pull requests|,"https://github.com/ari-ban/glassfish-genericjmsra/issues/34
+https://github.com/ari-ban/glassfish-genericjmsra/issues/35
+https://github.com/ari-ban/glassfish-genericjmsra/issues/36
+https://github.com/alwin-joseph/target-test-jsf-issue-migration/issues/51
+https://github.com/alwin-joseph/target-test-jsf-issue-migration/issues/52
+https://github.com/alwin-joseph/target-test-jsf-issue-migration/issues/53
+https://github.com/ari-ban/glassfish-genericjmsra/issues/26
+https://github.com/ari-ban/glassfish-genericjmsra/issues/27
+https://github.com/ari-ban/glassfish-genericjmsra/issues/28
+https://github.com/ari-ban/issue-test/issues/1154
+https://github.com/ari-ban/issue-test/issues/1155
+https://github.com/ari-ban/issue-test/issues/1156
+https://github.com/eclipse-ee4j/glassfish-samples/issues/62
+https://github.com/eclipse-ee4j/cargotracker/issues/89
+",1,1,0,1,1,0,0,-,0.0,1.0,1,0,0,0,0
+k8s-ci-robot,52160,302,0,0,66298,49644,"comments informing about users permissions (e.g., if user gives a command that is not allowed)|","https://github.com/cri-o/cri-o/issues/594
+https://github.com/GoogleCloudPlatform/kubeflow-distribution/issues/121
+https://github.com/GoogleCloudPlatform/kubeflow-distribution/issues/59
+https://github.com/helm/charts/issues/1618
+https://github.com/helm/charts/issues/1799
+https://github.com/helm/charts/issues/19410
+https://github.com/helm/charts/issues/2920
+https://github.com/helm/charts/issues/3240
+https://github.com/helm/charts/issues/3289",0,1,1,1,0,1,0,interacts with other bot (fejta-bot),0.0,1.0,1,0,0,1,0
 brotherlogic,37635,139,37736,0,124,108,-,"https://github.com/adafruit/Python-Thermal-Printer/issues/49
 https://github.com/brotherlogic/advent/issues/11
 https://github.com/brotherlogic/advent/issues/15
@@ -29,7 +51,7 @@ https://github.com/brotherlogic/adventofcode/issues/3
 https://github.com/brotherlogic/adventofcode/issues/30
 https://github.com/brotherlogic/adventofcode/issues/32
 https://github.com/brotherlogic/adventofcode/issues/33
-https://github.com/brotherlogic/adventofcode/issues/34",0,0,0,1,1,0,0,it seems to be a person,1.0,1.0,0
+https://github.com/brotherlogic/adventofcode/issues/34",0,0,0,1,1,0,0,it seems to be a person,1.0,1.0,0,0,0,0,0
 fejta-bot,34736,224,195,0,93992,34164,"monitors the time that an issue is open and provide commands regarding this time (e.g., /close, /label)","https://github.com/helm/charts/issues/1001
 https://github.com/helm/charts/issues/1005
 https://github.com/helm/charts/issues/1016
@@ -38,7 +60,7 @@ https://github.com/helm/charts/issues/1021
 https://github.com/helm/charts/issues/1070
 https://github.com/helm/charts/issues/1071
 https://github.com/helm/charts/issues/1073
-https://github.com/helm/charts/issues/1075",0,0,1,0,1,0,0,-,0.0,1.0,1
+https://github.com/helm/charts/issues/1075",0,0,1,0,1,0,0,-,0.0,1.0,1,0,0,0,0
 gopherbot,27453,11,5430,0,47068,25240,comment references for a certain issue mentioned in the golang issue tracker|import comments from golang issue tracker|push commits,"https://github.com/golang/dep/issues/300
 https://github.com/golang/go/issues/1
 https://github.com/golang/go/issues/10
@@ -47,7 +69,7 @@ https://github.com/golang/go/issues/1001
 https://github.com/golang/go/issues/10010
 https://github.com/golang/go/issues/1002
 https://github.com/golang/go/issues/10029
-https://github.com/golang/go/issues/10048",0,1,1,1,0,0,1,-,0.0,1.0,1
+https://github.com/golang/go/issues/10048",0,1,1,1,0,0,1,-,0.0,1.0,1,-,0,0,0
 fire-bot,15794,337,15837,0,0,0,create issues via email,"https://github.com/acketon/poptheme1/issues/1
 https://github.com/adriannier/eruption/issues/1
 https://github.com/adriannier/eruption/issues/2
@@ -56,7 +78,7 @@ https://github.com/AirFM/Windows-App/issues/1
 https://github.com/ajency/CIBIL-CRO/issues/4
 https://github.com/ajency/CIBIL-CRO/issues/6
 https://github.com/ajency/HK-Retail-Adhocs/issues/1
-https://github.com/ajency/HK-Retail-Adhocs/issues/10",1,0,0,1,1,0,0,-,0.0,1.0,1
+https://github.com/ajency/HK-Retail-Adhocs/issues/10",1,0,0,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 DartBot,15148,42,11302,0,33593,12034,move issues from one project to another|close issues|label issues,"https://github.com/dart-archive/barback/issues/10
 https://github.com/dart-archive/barback/issues/11
 https://github.com/dart-archive/barback/issues/12
@@ -65,7 +87,7 @@ https://github.com/dart-archive/barback/issues/14
 https://github.com/dart-archive/barback/issues/15
 https://github.com/dart-archive/barback/issues/16
 https://github.com/dart-archive/barback/issues/17
-https://github.com/dart-archive/barback/issues/18",1,0,1,1,1,0,0,-,0.0,1.0,1
+https://github.com/dart-archive/barback/issues/18",1,0,1,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 cf-gitbot,15123,1050,755,0,13487,13123,label issues|import issues from github to pivotal,"https://github.com/cf-platform-eng/concourse-pypi-resource/issues/14
 https://github.com/cf-platform-eng/concourse-pypi-resource/issues/25
 https://github.com/cf-platform-eng/concourse-pypi-resource/issues/26
@@ -74,7 +96,7 @@ https://github.com/cf-platform-eng/concourse-pypi-resource/issues/32
 https://github.com/cf-platform-eng/concourse-pypi-resource/issues/33
 https://github.com/cf-platform-eng/concourse-pypi-resource/issues/34
 https://github.com/cf-platform-eng/concourse-pypi-resource/issues/40
-https://github.com/cf-platform-eng/tile-generator/issues/189",0,0,1,0,1,0,0,-,0.0,1.0,1
+https://github.com/cf-platform-eng/tile-generator/issues/189",0,0,1,0,1,0,0,-,0.0,1.0,1,-,0,0,0
 vaadin-bot,12107,0,0,0,0,0,import issues from https://dev.vaadin.com/ to github|close issues,"https://github.com/vaadin/cdi/issues/100
 https://github.com/vaadin/cdi/issues/46
 https://github.com/vaadin/cdi/issues/50
@@ -83,7 +105,7 @@ https://github.com/vaadin/cdi/issues/63
 https://github.com/vaadin/cdi/issues/66
 https://github.com/vaadin/cdi/issues/67
 https://github.com/vaadin/cdi/issues/68
-https://github.com/vaadin/cdi/issues/76",1,0,1,1,1,0,0,-,0.0,1.0,1
+https://github.com/vaadin/cdi/issues/76",1,0,1,1,1,0,0,-,0.0,1.0,1,0,0,0,0
 element-bot,11057,4,0,0,6502,6290,translate issues|analyze if the issue meets the requirements|label issues|close issues|update titles,"https://github.com/ElemeFE/element/issues/10000
 https://github.com/ElemeFE/element/issues/10001
 https://github.com/ElemeFE/element/issues/10002
@@ -92,7 +114,7 @@ https://github.com/ElemeFE/element/issues/10005
 https://github.com/ElemeFE/element/issues/10009
 https://github.com/ElemeFE/element/issues/10010
 https://github.com/ElemeFE/element/issues/10013
-https://github.com/ElemeFE/element/issues/10015",0,1,1,1,1,0,0,-,0.0,1.0,1
+https://github.com/ElemeFE/element/issues/10015",0,1,1,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 swift-ci,10364,18,0,0,0,0,create issues that are imported from JIRA|run tests after user commands|move issues after user commands,"https://github.com/apple/llvm-project/issues/4294
 https://github.com/apple/llvm-project/issues/4296
 https://github.com/apple/llvm-project/issues/4297
@@ -101,7 +123,7 @@ https://github.com/apple/llvm-project/issues/4299
 https://github.com/apple/llvm-project/issues/4301
 https://github.com/apple/llvm-project/issues/4302
 https://github.com/apple/llvm-project/issues/4303
-https://github.com/apple/llvm-project/issues/4304",1,0,1,0,1,0,0,-,0.0,1.0,1
+https://github.com/apple/llvm-project/issues/4304",1,0,1,0,1,0,0,-,0.0,1.0,1,-,0,0,0
 openshift-bot,9660,375,0,0,0,0,"provide commands to label issues considering the time of inactivity|provide instructions about how to deal with the issues (e.g., which command shall be used to reopen an issue)","https://github.com/okd-project/okd/issues/1010
 https://github.com/okd-project/okd/issues/1020
 https://github.com/okd-project/okd/issues/107
@@ -110,7 +132,7 @@ https://github.com/okd-project/okd/issues/1143
 https://github.com/okd-project/okd/issues/1170
 https://github.com/okd-project/okd/issues/1175
 https://github.com/okd-project/okd/issues/1208
-https://github.com/okd-project/okd/issues/1222",0,1,0,0,1,0,0,-,0.0,1.0,1
+https://github.com/okd-project/okd/issues/1222",0,1,0,0,1,0,0,-,0.0,1.0,1,-,0,0,0
 0crat,9530,131,0,0,0,0,"comment in issues considering the events that happend (e.g., comments to which user the issue was assigned to)","https://github.com/aintshy/hub/issues/28
 https://github.com/aivinog1/0pdd-idea-plugin/issues/1
 https://github.com/amihaiemil/docker-java-api/issues/1
@@ -119,7 +141,7 @@ https://github.com/amihaiemil/docker-java-api/issues/103
 https://github.com/amihaiemil/docker-java-api/issues/105
 https://github.com/amihaiemil/docker-java-api/issues/108
 https://github.com/amihaiemil/docker-java-api/issues/109
-https://github.com/amihaiemil/docker-java-api/issues/114",0,1,0,0,0,0,1,-,1.0,1.0,1
+https://github.com/amihaiemil/docker-java-api/issues/114",0,1,0,0,0,0,1,-,1.0,1.0,1,-,0,0,0
 google-oss-bot,9246,30,0,0,0,0,comments in issues considering the time of inactivity|closes issues,"https://github.com/androidx/media/issues/10
 https://github.com/androidx/media/issues/12
 https://github.com/androidx/media/issues/153
@@ -128,7 +150,7 @@ https://github.com/androidx/media/issues/209
 https://github.com/androidx/media/issues/21
 https://github.com/androidx/media/issues/22
 https://github.com/androidx/media/issues/239
-https://github.com/androidx/media/issues/29",0,1,0,1,1,0,0,-,0.0,1.0,1
+https://github.com/androidx/media/issues/29",0,1,0,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 ant-design-bot,8516,10,0,0,0,0,translate issues|analyze if the issue meets the requirements|label issues|close issues|,"https://github.com/ant-design/ant-design/issues/10000
 https://github.com/ant-design/ant-design/issues/10003
 https://github.com/ant-design/ant-design/issues/10004
@@ -137,12 +159,12 @@ https://github.com/ant-design/ant-design/issues/10011
 https://github.com/ant-design/ant-design/issues/10012
 https://github.com/ant-design/ant-design/issues/10013
 https://github.com/ant-design/ant-design/issues/10014
-https://github.com/ant-design/ant-design/issues/10015",0,1,1,1,0,0,1,-,0.0,1.0,1
+https://github.com/ant-design/ant-design/issues/10015",0,1,1,1,0,0,1,-,0.0,1.0,1,-,0,0,0
 msft-github-bot,7485,22,0,0,0,0,label the issue considering the time of inactivity|closes issues,"https://github.com/microsoft/accessibility-insights-web/issues/1302
 https://github.com/microsoft/accessibility-insights-web/issues/694
 https://github.com/microsoft/accessibility-insights-web/issues/696
 https://github.com/microsoft/accessibility-insights-web/issues/697
-https://github.com/microsoft/accessibility-insights-web/issues/698",0,0,1,1,1,0,0,-,1.0,1.0,1
+https://github.com/microsoft/accessibility-insights-web/issues/698",0,0,1,1,1,0,0,-,1.0,1.0,1,-,0,0,0
 gitcoinbot,6893,1675,0,0,0,0,"provide comments with several objectives (e.g., inform the time o inactivity, report the candidates to solve the issue)","https://github.com/0lBounties/bounties/issues/1
 https://github.com/0lBounties/bounties/issues/2
 https://github.com/0lBounties/bounties/issues/3
@@ -151,7 +173,7 @@ https://github.com/0LNetworkCommunity/libra/issues/986
 https://github.com/0LNetworkCommunity/libra/issues/999
 https://github.com/0mkara/etheratom/issues/198
 https://github.com/0mkara/etheratom/issues/201
-https://github.com/0mkara/etheratom/issues/218",0,1,0,0,1,0,0,-,0.0,1.0,1
+https://github.com/0mkara/etheratom/issues/218",0,1,0,0,1,0,0,-,0.0,1.0,1,-,0,0,0
 rultor,6196,624,0,0,0,0,comment in issues|deploy the system|release the systems|merge pull requests,"https://github.com/aalambra-seertech/simpleflaskapp/issues/1
 https://github.com/abishekvashok/cmatrix/issues/30
 https://github.com/abishekvashok/img_checker/issues/2
@@ -160,58 +182,58 @@ https://github.com/abishekvashok/img_checker/issues/3
 https://github.com/afranken/jmeter-analysis-maven-plugin/issues/38
 https://github.com/agorlov/agorlov.github.io/issues/9
 https://github.com/aintshy/android/issues/1
-https://github.com/aintshy/hub/issues/1",0,1,0,0,0,1,0,-,0.0,1.0,1
+https://github.com/aintshy/hub/issues/1",0,1,0,0,0,1,0,-,0.0,1.0,1,-,0,0,0
 babel-bot,5641,17,0,0,0,0,the bot just provide welcome comments to the users,"https://github.com/babel/babel/issues/10015
 https://github.com/babel/babel/issues/10022
 https://github.com/babel/babel/issues/10160
 https://github.com/babel/babel/issues/10001
-https://github.com/babel/babel/issues/10140",0,1,0,0,0,0,0,maybe remove from the analysis,0.0,1.0,1
+https://github.com/babel/babel/issues/10140",0,1,0,0,0,0,0,maybe remove from the analysis,0.0,1.0,1,-,0,0,0
 react-native-bot,5164,2,0,0,0,0,the bot checks if an issue has all the information needed (template)|provide commands to other bots|closes and label issues,"https://github.com/facebook/react-native/issues/16490
 https://github.com/facebook/react-native/issues/16483
 https://github.com/facebook/react-native/issues/16521
 https://github.com/facebook/react-native/issues/16358
 https://github.com/facebook/react-native/issues/16774
 https://github.com/facebook/react-native/issues/16799
-https://github.com/facebook/react-native/issues/16607",0,1,1,1,1,0,0,interacts with other bots,0.0,1.0,1
+https://github.com/facebook/react-native/issues/16607",0,1,1,1,1,0,0,interacts with other bots,0.0,1.0,1,-,0,0,0
 pyup-bot,4331,3771,0,0,0,0,the bot open pull requests to update dependencies|manage dependencies,"https://github.com/8ss/github-slideshow/issues/2
 https://github.com/alisonamerico/planilha-de-contas/issues/2
 https://github.com/alvesgabriel/eleven/issues/3
 https://github.com/alikins/color_bucket_logger/issues/1
-https://github.com/631068264/aioweb/issues/3",0,1,0,0,1,0,0,-,0.0,1.0,1
+https://github.com/631068264/aioweb/issues/3",0,1,0,0,1,0,0,-,0.0,1.0,1,-,0,0,0
 istio-policy-bot,4234,6,0,0,0,0,it comments advising about time of inactivy|it closes issues after a certain time of inactivity,"https://github.com/istio/bottestrepo/issues/16
 https://github.com/istio/bottestrepo/issues/23
 https://github.com/istio/istio/issues/13837
 https://github.com/istio/istio/issues/11362
 https://github.com/istio/bottestrepo/issues/25
 https://github.com/istio/istio/issues/14672
-",0,1,1,1,1,0,0,-,0.0,1.0,1
+",0,1,1,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 vue-bot,3543,11,0,0,0,0,it verifies if the issue follows a specific template|it closes issues which do not follow the template|it provides comments in different languages,"https://github.com/vuejs/devtools/issues/1166
 https://github.com/vuejs/devtools/issues/1024
 https://github.com/vuejs/devtools/issues/1030
 https://github.com/vuejs/devtools/issues/1364
-https://github.com/vuejs/devtools/issues/564",0,1,0,1,1,0,0,-,0.0,1.0,1
+https://github.com/vuejs/devtools/issues/564",0,1,0,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 hashibot,3238,63,0,0,0,0,it migrates issues from a project to another|informs user about the migration|close the issues that were migrated|closes issues considering a certain time of inactivity|locks the conversation in the issue,"https://github.com/circonus-labs/terraform-provider-circonus/issues/4
 https://github.com/cloudflare/terraform-provider-cloudflare/issues/5
 https://github.com/hashicorp/terraform/issues/13039
 https://github.com/hashicorp/terraform/issues/15468
-https://github.com/hashicorp/terraform/issues/19625",0,1,1,1,1,0,0,"it locks the conversation, not sure if it is a functionality.",0.0,1.0,1
+https://github.com/hashicorp/terraform/issues/19625",0,1,1,1,1,0,0,"it locks the conversation, not sure if it is a functionality.",0.0,1.0,1,0,0,0,1
 miq-bot,3114,72,0,0,0,0,close issues considering a certain time of inactivity|label issues after commands,"https://github.com/ansible/ansible_tower_client_ruby/issues/115
 https://github.com/ansible/ansible_tower_client_ruby/issues/121
 https://github.com/Fryguy/sandbox/issues/1
 https://github.com/ManageIQ/manageiq/issues/1056
-https://github.com/ansible/ansible_tower_client_ruby/issues/125",0,1,1,1,0,0,1,-,1.0,1.0,1
+https://github.com/ansible/ansible_tower_client_ruby/issues/125",0,1,1,1,0,0,1,-,1.0,1.0,1,-,0,0,0
 webpack-bot,3008,40,0,0,0,0,comments when a issues has a long time of inactivity|closes issues after a certain time of inactivity|checks the conformity of commits messages|,"https://github.com/spinnaker/keel/issues/1005
 https://github.com/spinnaker/keel/issues/1236
 https://github.com/spinnaker/keel/issues/1392
 https://github.com/spinnaker/keel/pull/2024
 https://github.com/spinnaker/spinnaker/issues/1476
-https://github.com/spinnaker/spinnaker/issues/3934",0,1,1,1,1,0,0,-,0.0,1.0,1
+https://github.com/spinnaker/spinnaker/issues/3934",0,1,1,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 spinnakerbot,3006,5,0,0,0,0,comments when a issues has a long time of inactivity|closes issues after a certain time of inactivity|checks the conformity of commits messages|,"https://github.com/spinnaker/keel/issues/1005
 https://github.com/spinnaker/keel/issues/1236
 https://github.com/spinnaker/keel/issues/1392
 https://github.com/spinnaker/keel/pull/2024
 https://github.com/spinnaker/spinnaker/issues/1476
-https://github.com/spinnaker/spinnaker/issues/3934",0,1,1,1,1,0,0,-,0.0,1.0,1
+https://github.com/spinnaker/spinnaker/issues/3934",0,1,1,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 facebook-github-bot,2804,52,0,0,0,0,comments with instructions for users about the issue|closes issues after a certain time of inactivity,"https://github.com/abhigyan9301/QRCode/issues/1
 https://github.com/facebook/react-native/issues/10651
 https://github.com/facebook/react-native/issues/10139
@@ -222,7 +244,7 @@ https://github.com/facebook/react-native/issues/10059
 https://github.com/chevette77/love-template/issues/1
 https://github.com/facebook/buck/issues/626
 https://github.com/facebook/buck/issues/35
-https://github.com/ant-design/ant-design/issues/5396",0,1,1,1,0,0,1,It seems that the bot was unavailable at some point in 2018,0.0,1.0,1
+https://github.com/ant-design/ant-design/issues/5396",0,1,1,1,0,0,1,It seems that the bot was unavailable at some point in 2018,0.0,1.0,1,-,0,0,0
 tekton-robot,2588,17,0,0,0,0,closes issues after a certain time of inactivity|assign and label issues considering a command|comments are related to the actions performed,"https://github.com/tektoncd/catalog/issues/102
 https://github.com/tektoncd/catalog/issues/1024
 https://github.com/tektoncd/catalog/issues/1028
@@ -231,17 +253,17 @@ https://github.com/tektoncd/catalog/issues/1052
 https://github.com/tektoncd/catalog/issues/106
 https://github.com/tektoncd/catalog/issues/1064
 https://github.com/tektoncd/catalog/issues/1066
-https://github.com/tektoncd/catalog/issues/172",0,1,1,1,0,0,1,-,1.0,1.0,1
+https://github.com/tektoncd/catalog/issues/172",0,1,1,1,0,0,1,-,1.0,1.0,1,-,0,0,0
 che-bot,2497,4,0,0,0,0,import issues from other projects|comments about the time of inactivity of an issue|closes the isses after a certain time of inactivity,"https://github.com/che-incubator/chectl/issues/47
 https://github.com/eclipse/che/issues/10099
 https://github.com/eclipse/che/issues/1275
-https://github.com/eclipse/che/issues/10343",1,1,1,1,1,0,0,-,0.0,1.0,1
+https://github.com/eclipse/che/issues/10343",1,1,1,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 sailsbot,2386,13,0,0,0,0,comments in issues after certain time of inactivity|close issues after a certain time of inactivity,"https://github.com/balderdashy/sails/issues/1986
 https://github.com/balderdashy/sails/issues/2229
 https://github.com/balderdashy/sails/issues/2265
 https://github.com/balderdashy/sails/issues/2269
 https://github.com/balderdashy/sails/issues/2272
-https://github.com/balderdashy/sails/issues/2347",0,1,0,1,1,0,0,-,0.0,1.0,1
+https://github.com/balderdashy/sails/issues/2347",0,1,0,1,1,0,0,-,0.0,1.0,1,-,0,0,0
 kubevirt-bot,2310,54,0,0,0,0,closes issues after certain taime of inactivity|label issues|comment about certain time of inactivity,"https://github.com/k8snetworkplumbingwg/ovs-cni/issues/107
 https://github.com/k8snetworkplumbingwg/ovs-cni/issues/131
 https://github.com/k8snetworkplumbingwg/ovs-cni/issues/133
@@ -249,20 +271,20 @@ https://github.com/k8snetworkplumbingwg/ovs-cni/issues/143
 https://github.com/k8snetworkplumbingwg/ovs-cni/issues/37
 https://github.com/k8snetworkplumbingwg/ovs-cni/issues/57
 https://github.com/kubevirt/api-reference/issues/15
-https://github.com/kubevirt/client-go/issues/18",0,1,1,1,0,0,1,-,0.0,1.0,1
+https://github.com/kubevirt/client-go/issues/18",0,1,1,1,0,0,1,-,0.0,1.0,1,-,0,0,0
 knative-test-reporter-robot,2263,6,0,0,0,0,open issues if the tests were not successful|closes the issue if the tests have passed|labels the isseus considering the results of the tests,"https://github.com/chizhg/Algorithms/issues/6
 https://github.com/knative/eventing/issues/2741
 https://github.com/knative/eventing/issues/2803
 https://github.com/knative/eventing/issues/2990
 https://github.com/knative/eventing/issues/3198
-https://github.com/knative/eventing/issues/3240",1,1,0,1,0,0,0,it seems that it reopens issues if there are test which failed.,0.0,1.0,1
+https://github.com/knative/eventing/issues/3240",1,1,0,1,0,0,0,it seems that it reopens issues if there are test which failed.,0.0,1.0,1,-,0,0,0
 timsuchanek,2255,184,0,0,0,0,-,"https://github.com/alexkuz/react-input-enhancements/issues/47
 https://github.com/apollographql/apollo-server/issues/2605
 https://github.com/ardatan/graphql-tools/issues/723
 https://github.com/aws/aws-sdk-js-v3/issues/193
 https://github.com/blai/grunt-express/issues/32
 https://github.com/boot2docker/boot2docker/issues/188
-",0,0,0,0,0,0,0,it is a real person,0.0,1.0,0
+",0,0,0,0,0,0,0,it is a real person,0.0,1.0,0,-,0,0,0
 knative-prow-robot,2214,57,0,0,0,0,closes issues after a command|assing issues after a command,"https://github.com/google/knative-gcp/issues/1147
 https://github.com/google/knative-gcp/issues/117
 https://github.com/google/knative-gcp/issues/1234
@@ -271,7 +293,7 @@ https://github.com/google/knative-gcp/issues/1447
 https://github.com/google/knative-gcp/issues/154
 https://github.com/google/knative-gcp/issues/1550
 https://github.com/knative/build/issues/290
-https://github.com/knative/caching/issues/453",0,1,1,1,0,1,0,-,1.0,1.0,1
+https://github.com/knative/caching/issues/453",0,1,1,1,0,1,0,-,1.0,1.0,1,-,0,0,0
 ArduinoBot,2116,18,0,0,0,0,create issues in the arduino-de (german) everytime that a new commit is submited to the repository arduino-en (english)|label the issues to indicate the it was generate by a bot|,"https://github.com/arduino/Arduino/issues/4751
 https://github.com/arduino/Arduino/issues/6548
 https://github.com/arduino/Arduino/issues/7138
@@ -286,19 +308,19 @@ https://github.com/arduino/reference-es/issues/238
 https://github.com/arduino/reference-es/issues/242
 https://github.com/arduino/reference-es/issues/258
 https://github.com/arduino/reference-es/issues/269
-",1,1,1,0,1,0,0,it is used to keep two repositories synced,0.0,1.0,1
+",1,1,1,0,1,0,0,it is used to keep two repositories synced,0.0,1.0,1,-,0,0,0
 IssueHuntBot,1845,323,0,0,0,0,it is a bot that informs how much would be paid for someone who solves that issue|it is connected to the platform https://oss.issuehunt.io/r/aashutoshrathi/Insta-Downloader-Extension/issues/43|it reports when a pull request fixing that issue is submmited,"https://github.com/aashutoshrathi/git-profiler-bot/issues/13
 https://github.com/aashutoshrathi/git-stalk-cli/issues/59
 https://github.com/aashutoshrathi/Insta-Downloader-Extension/issues/43
 https://github.com/ant-design/ant-design/issues/10576
 https://github.com/ant-design/ant-design/issues/11042
-https://github.com/ant-design/ant-design/issues/1158",0,1,0,0,1,0,0,-,0.0,1.0,1
+https://github.com/ant-design/ant-design/issues/1158",0,1,0,0,1,0,0,-,0.0,1.0,1,-,0,0,0
 jekyllbot,1687,26,0,0,0,0,"it creates issues informing about the period without new releases of jekyll|comments, labels, and closes issues after a certain time of inactivity|open issues to control dependencies|","https://github.com/jekyll/github-metadata/issues/165
 https://github.com/jekyll/github-metadata/issues/168
 https://github.com/jekyll/github-metadata/issues/169
 https://github.com/jekyll/github-metadata/issues/209
 https://github.com/jekyll/github-metadata/issues/223
-",1,1,1,1,1,0,0,0,0.0,1.0,1
+",1,1,1,1,1,0,0,0,0.0,1.0,1,-,0,0,0
 az-iot-builder-01,1681,7,0,0,0,0,closes issues when they are complete|comments on issues asking for feedback about the contribution process|,"https://github.com/Azure/azure-c-shared-utility/issues/164
 https://github.com/Azure/azure-c-shared-utility/issues/168
 https://github.com/Azure/azure-c-shared-utility/issues/174
@@ -310,7 +332,7 @@ https://github.com/Azure/azure-iot-sdk-c/issues/1049
 https://github.com/Azure/azure-c-shared-utility/issues/469
 https://github.com/Azure/azure-c-shared-utility/issues/474
 https://github.com/Azure/azure-c-shared-utility/issues/487
-",0,1,0,1,1,0,0,not so related to TD,0.0,1.0,1
+",0,1,0,1,1,0,0,not so related to TD,0.0,1.0,1,-,0,0,0
 GordonTheTurtle,1624,8,0,0,0,0,comments and closes issues considering a certain time of inactivity|label issues considering the main topic|,"https://github.com/docker/cli/issues/539
 https://github.com/docker/cli/issues/688
 https://github.com/docker/compose/issues/1673
@@ -320,7 +342,7 @@ https://github.com/moby/libnetwork/issues/1167
 https://github.com/moby/libnetwork/issues/1168
 https://github.com/moby/libnetwork/issues/1204
 https://github.com/moby/libnetwork/issues/1207
-https://github.com/moby/libnetwork/issues/1210",0,1,1,1,0,0,1,the bot seems to be used in a process to clean up the project's backlog,0.0,1.0,1
+https://github.com/moby/libnetwork/issues/1210",0,1,1,1,0,0,1,the bot seems to be used in a process to clean up the project's backlog,0.0,1.0,1,0,0,0,0
 ks-ci-bot,1433,21,0,0,0,0,closes issues after a command|it comments the command that was received|assign and label the issues after commands,"https://github.com/kubesphere/community/issues/367
 https://github.com/kubesphere/community/issues/368
 https://github.com/kubesphere/community/issues/369
@@ -330,7 +352,7 @@ https://github.com/kubesphere/console/issues/1134
 https://github.com/kubesphere/console/issues/125
 https://github.com/kubesphere/console/issues/1250
 https://github.com/kubesphere/console/issues/128
-",0,1,1,1,0,1,0,"it also add milestones to the issue, not sure if it is a functionality to report",1.0,1.0,1
+",0,1,1,1,0,1,0,"it also add milestones to the issue, not sure if it is a functionality to report",1.0,1.0,1,0,1,0,0
 jetstack-bot,1251,20,0,0,0,0,close issues after commands|label issues after commands|comments when it closes an issue|comments if someone asked for help with an issue|,"https://github.com/cert-manager/cert-manager/issues/1168
 https://github.com/cert-manager/cert-manager/issues/1169
 https://github.com/cert-manager/cert-manager/issues/1176
@@ -340,15 +362,23 @@ https://github.com/cert-manager/cert-manager/issues/1355
 https://github.com/cert-manager/cert-manager/issues/1383
 https://github.com/cert-manager/cert-manager/issues/1387
 https://github.com/cert-manager/cert-manager/issues/1396
-",0,1,1,1,0,1,0,also add milestone to an issue,0.0,1.0,1
+",0,1,1,1,0,1,0,also add milestone to an issue,0.0,1.0,1,0,1,0,0
 eslintbot,1243,2,0,0,0,0,comments a initial message inform the rules to collaborate with the project,"https://github.com/eslint/eslint/issues/3084
 https://github.com/eslint/eslint/issues/3087
 https://github.com/eslint/eslint/issues/3089
 https://github.com/eslint/eslint/issues/3116
 https://github.com/eslint/eslint/issues/3118
 https://github.com/eslint/eslint/issues/3120
-",0,1,0,0,0,0,0,not sure if makes sense report this one,0.0,1.0,1
-gitmate-bot,1120,28,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
+",0,1,0,0,0,0,0,not sure if makes sense report this one,0.0,1.0,1,-,0,0,0
+gitmate-bot,1120,28,0,0,0,0,"reports the results of the execution of https://gitmate.io/, which identifies replicated tickets|it infers a label for an issue|it mentions duplicated issues in similar issues|when an issue is labeled as ""stale""|it unassigns the issue from a user|it is a interface for https://gitmate.io/","https://github.com/aerupt/aerupt.github.io/issues/3
+https://github.com/aerupt/aerupt.github.io/issues/5
+https://github.com/aerupt/dollars/issues/11
+https://github.com/aerupt/dollars/issues/14
+https://github.com/aerupt/dollars/issues/15
+https://github.com/aerupt/dollars/issues/16
+https://github.com/coala/cEPs/issues/60
+https://github.com/coala/cEPs/issues/69
+https://github.com/coala/cEPs/issues/70",0,1,1,0,1,0,0,-,1.0,1.0,1,0,0,0,0
 hft-team-city,1052,18,0,0,0,0,comments in which release certain issue was solved,"https://github.com/OpenHFT/Chronicle-Bytes/issues/103
 https://github.com/OpenHFT/Chronicle-Bytes/issues/105
 https://github.com/OpenHFT/Chronicle-Bytes/issues/106
@@ -357,7 +387,7 @@ https://github.com/OpenHFT/Chronicle-Bytes/issues/118
 https://github.com/OpenHFT/Chronicle-Bytes/issues/120
 https://github.com/OpenHFT/Chronicle-Bytes/issues/128
 https://github.com/OpenHFT/Chronicle-Bytes/issues/129
-https://github.com/OpenHFT/Chronicle-Bytes/issues/13",0,1,0,0,1,0,0,not sure if makes sense report this one,0.0,1.0,1
+https://github.com/OpenHFT/Chronicle-Bytes/issues/13",0,1,0,0,1,0,0,not sure if makes sense report this one,0.0,1.0,1,0,0,0,0
 matticbot,1047,16,0,0,0,0,commits changes to the repositories after issues are solved|comments which realease includes the changes made in a certain issue|label the issues that were released|,"https://github.com/Automattic/jetpack/issues/23363
 https://github.com/Automattic/jetpack/issues/9603
 https://github.com/Automattic/newspack-ads/issues/106
@@ -366,77 +396,301 @@ https://github.com/Automattic/newspack-ads/issues/363
 https://github.com/Automattic/newspack-ads/issues/364
 https://github.com/Automattic/newspack-ads/issues/51
 https://github.com/Automattic/newspack-ads/issues/560
-https://github.com/Automattic/newspack-ads/issues/87",0,1,1,0,1,0,0,not sure if makes sense report this one,0.0,1.0,1
-adobe-bot,873,52,0,0,0,0,-,,0,1,1,0,0,0,0,-,0.0,0.0,1
+https://github.com/Automattic/newspack-ads/issues/87",0,1,1,0,1,0,0,not sure if makes sense report this one,0.0,1.0,1,0,0,0,0
+adobe-bot,873,52,0,0,0,0,"it exports issues from github to jira (i.e, creates issues on jira)","https://github.com/adobe/aio-cli-plugin-runtime/issues/24
+https://github.com/adobe/aio-cli-plugin-runtime/issues/27
+https://github.com/adobe/aio-cli-plugin-runtime/issues/39
+https://github.com/adobe/aio-cli-plugin-runtime/issues/70
+https://github.com/adobe/aio-cli-plugin-runtime/issues/73
+https://github.com/adobe/aio-cli-plugin-runtime/issues/76
+https://github.com/adobe/aio-cli-plugin-runtime/issues/90
+https://github.com/adobe/aio-cli-plugin-runtime/issues/91
+https://github.com/adobe/aio-cli-plugin-runtime/issues/94
+",0,1,1,0,1,0,0,not sure if it worth to report it,0.0,1.0,1,0,0,0,0
 pirate-bot,866,19,0,0,0,0,comment when a issue is released|label the issues that were released,"https://github.com/Codeinwp/feedzy-rss-feeds/issues/573
 https://github.com/Codeinwp/feedzy-rss-feeds/issues/576
 https://github.com/Codeinwp/feedzy-rss-feeds/issues/578
 https://github.com/Codeinwp/feedzy-rss-feeds/issues/439
 https://github.com/Codeinwp/feedzy-rss-feeds/issues/476
 https://github.com/Codeinwp/feedzy-rss-feeds/issues/516
-",0,1,1,0,0,0,0,not sure if makes sense report this one,0.0,1.0,1
-istio-testing,856,7,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-kyma-bot,848,30,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-renovate-bot,755,94,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-ng-zorro-bot,747,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-OCA-git-bot,730,191,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-ualbertalib-bot,701,6,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-balena-ci,684,111,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-yarnbot,667,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-egg-bot,664,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-theopenlab-ci,640,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-rails-bot,630,8,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-tessel-crashbot,628,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-knative-housekeeping-robot,598,10,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-homeassistant,598,16,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-neos-bot,575,10,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-atomist-bot,573,58,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-macaca-bot,552,21,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-codecov,510,64,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-sourcegraph-bot,465,12,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-nativescript-vue-bot,463,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-RealmBot,461,6,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-shaka-bot,456,4,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-fluttergithubbot,420,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-ibmdotcom-bot,384,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-google-oss-robot,380,24,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-metal3-io-bot,370,17,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-retest-bot,366,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-mods-bot,366,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-Google-Autofuzz,348,146,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-stencila-ci,333,11,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-pouchrobot,324,7,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-octokitbot,288,23,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-wallabag-bot,287,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-nfbot,272,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-assemblebot,269,27,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-usercont-release-bot,253,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-vscodebot,244,33,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-qiwibot,241,32,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-dictybasebot,230,12,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-mybit-bot,223,13,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-aio-libs-bot,219,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-palashmon,217,59,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-cmsdmwmbot,208,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-pull-bot,207,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-infinitered-circleci,198,14,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-semantic-release-bot,186,23,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-seabird-bot,186,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-SegmentDestinationsBot,181,24,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-travi-bot,172,34,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-greenkeeper,169,79,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-welcome,168,63,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-dhis2-bot,164,29,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-akka-ci,162,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-netoffice-bot,160,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-vis-bot,155,7,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-lock,138,91,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-react-native-community-bot,137,8,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-soloio-bot,132,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-jw-issue-bot,132,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-stoplight-bot,124,10,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-caicloud-bot,120,14,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-antv-bot,119,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-QacoBot,117,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-ApiaryBot,106,5,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
-bors,101,40,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1
+",0,1,1,0,0,0,0,not sure if makes sense report this one,0.0,1.0,1,0,0,0,0
+istio-testing,856,7,0,0,0,0,comments in issues considering a certain time of inactivity|closes issues after a command|it run tests in pull requests and generate issues if the test fails|merge accepted pull requests,"https://github.com/istio/api/issues/2451
+https://github.com/istio/istio/issues/12431
+https://github.com/istio/istio/issues/12678
+https://github.com/istio/istio/issues/12873",0,1,0,1,0,0,0,-,1.0,1.0,1,1,0,0,0
+kyma-bot,848,30,0,0,0,0,comments in issues considering the time of inactivity|closes issues|label the issue considering the time of inactivity,"https://github.com/kyma-incubator/compass/issues/1379
+https://github.com/kyma-incubator/compass/issues/1419
+https://github.com/kyma-incubator/compass/issues/1447
+https://github.com/kyma-incubator/compass/issues/571
+https://github.com/kyma-incubator/compass/issues/583
+https://github.com/kyma-incubator/compass/issues/660
+https://github.com/kyma-incubator/compass/issues/783
+https://github.com/kyma-incubator/compass/issues/789
+https://github.com/kyma-incubator/compass/issues/803",0,1,1,1,0,0,1,-,0.0,1.0,1,0,0,0,0
+renovate-bot,755,94,0,0,0,0,open pull requests to update dependencies|manage dependencies,"https://github.com/BobAnkh/add-contributors/issues/46
+https://github.com/cassels/dotpref/issues/294
+https://github.com/chrisns/docker-node-sonos-http-api/issues/179
+https://github.com/int128/list-associated-pull-requests-action/issues/118
+https://github.com/javierbrea/cypress-localstorage-commands/issues/196
+https://github.com/jsdoc/jsdoc/issues/1912
+https://github.com/leotm/react-native-template-new-architecture/issues/598
+https://github.com/leotm/react-native-template-new-architecture/issues/618
+https://github.com/liuderchi/ide-yaml/issues/64
+",0,0,0,0,1,0,0,"most issues mentions the bot|the bot does not perform actions in issue, only in pull requests",0.0,1.0,1,0,0,0,0
+ng-zorro-bot,747,1,0,0,0,0,"it checks if the issues match the requirements of the community (e.g., description in english)|","https://github.com/NG-ZORRO/ng-zorro-antd/issues/1074
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1078
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1085
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1164
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1166
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1168
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1175
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1176
+https://github.com/NG-ZORRO/ng-zorro-antd/issues/1177",0,1,1,1,1,0,0,not sure if it worths to report this one.,0.0,1.0,1,0,0,0,0
+OCA-git-bot,730,191,0,0,0,0,"it creates issues to to manage the issues in milestones (e.g., how many issues until a new release)","https://github.com/OCA/account-financial-tools/issues/1253
+https://github.com/OCA/account-financial-tools/issues/696
+https://github.com/OCA/account-financial-tools/issues/888
+https://github.com/OCA/account-invoice-reporting/issues/154
+https://github.com/OCA/account-invoice-reporting/issues/210
+https://github.com/OCA/account-invoice-reporting/issues/82
+https://github.com/OCA/account-reconcile/issues/218
+https://github.com/OCA/account-reconcile/issues/290
+https://github.com/OCA/account-reconcile/issues/343
+
+",1,0,1,0,1,0,0,-,0.0,1.0,1,0,1,0,0
+ualbertalib-bot,701,6,0,0,0,0,creates issues considering problems in the deployment process,"https://github.com/ualbertalib/discovery/issues/1377
+https://github.com/ualbertalib/discovery/issues/1382
+https://github.com/ualbertalib/discovery/issues/1385
+https://github.com/ualbertalib/discovery/issues/1456
+https://github.com/ualbertalib/discovery/issues/1457
+https://github.com/ualbertalib/discovery/issues/1458
+https://github.com/ualbertalib/discovery/issues/1551
+https://github.com/ualbertalib/discovery/issues/1553
+https://github.com/ualbertalib/discovery/issues/1555",1,1,0,0,1,0,0,-,0.0,1.0,1,0,0,0,0
+balena-ci,684,111,0,0,0,0,"it comments links for external support for that issue (i.e., the same issue that has been managed in other platform)","https://github.com/balena-io/balena-cli/issues/1032
+https://github.com/balena-io/balena-cli/issues/1061
+https://github.com/balena-io/balena-cli/issues/1063
+https://github.com/balena-io/balena-cli/issues/1287
+https://github.com/balena-io/balena-cli/issues/1300
+https://github.com/balena-io/balena-cli/issues/1302
+https://github.com/balena-io/balena-cli/issues/1319
+https://github.com/balena-io/balena-cli/issues/1322
+https://github.com/balena-io/balena-cli/issues/1323
+https://github.com/balena-io/balena-cli/issues/1373
+https://github.com/balena-io/balena-cli/issues/1379
+https://github.com/balena-io/balena-cli/issues/1380",1,1,0,0,1,0,0,-,0.0,1.0,1,0,0,0,0
+yarnbot,667,2,0,0,0,0,"welcome new users|comments in issues considering the time of inactivity|comments the results of tests|it runs the test tagged in issues with ""to reproduce""|closes issues after certain time of inactivity|labels issues considering certain time of inactivity","https://github.com/yarnpkg/berry/issues/1054
+https://github.com/yarnpkg/berry/issues/1057
+https://github.com/yarnpkg/berry/issues/1058
+https://github.com/yarnpkg/berry/issues/1302
+https://github.com/yarnpkg/berry/issues/1307
+https://github.com/yarnpkg/berry/issues/1324
+https://github.com/yarnpkg/berry/issues/1452
+https://github.com/yarnpkg/berry/issues/1457
+https://github.com/yarnpkg/berry/issues/1463
+",0,1,1,1,1,0,0,-,0.0,1.0,1,0,0,0,0
+egg-bot,664,2,0,0,0,0,"translate issues|checks if the issues meet the requeiremes (e.g., being reproduceble)|informs users if issues need to be reproduceble","https://github.com/eggjs/egg/issues/2393
+https://github.com/eggjs/egg/issues/2396
+https://github.com/eggjs/egg/issues/2398
+https://github.com/eggjs/egg/issues/2412
+https://github.com/eggjs/egg/issues/2413
+https://github.com/eggjs/egg/issues/2414
+https://github.com/eggjs/egg/issues/2437
+https://github.com/eggjs/egg/issues/2438
+https://github.com/eggjs/egg/issues/2439
+https://github.com/eggjs/egg/issues/2489
+https://github.com/eggjs/egg/issues/2493
+https://github.com/eggjs/egg/issues/2495",0,1,0,1,1,0,0,the text produced by the bot is the same reported by a user,0.0,1.0,1,0,0,0,0
+theopenlab-ci,640,2,0,0,0,0,create issues with reports containing errors in the environment check,-,1,0,0,0,1,0,0,not sure if it worths to report,0.0,1.0,1,0,0,0,0
+rails-bot,630,8,0,0,0,0,open issues to inform about new releases|comments in issues considering the time of inactivity|it closes issues after a certain time of inactivity|label the issue considering the time inactivity,"https://github.com/chancancode/discourse/issues/7
+https://github.com/codetriage/CodeTriage/issues/410
+https://github.com/heartcombo/devise/issues/3803
+https://github.com/rails/rails/issues/10242
+https://github.com/rails/rails/issues/10247
+https://github.com/rails/rails/issues/10276
+https://github.com/rails/rails/issues/10630
+https://github.com/rails/rails/issues/10679
+https://github.com/rails/rails/issues/10849
+https://github.com/rails/rails/issues/11392
+https://github.com/rails/rails/issues/11395
+https://github.com/rails/rails/issues/11415
+https://github.com/rails/rails/issues/11835
+https://github.com/rails/rails/issues/11884
+https://github.com/rails/rails/issues/11893",1,1,1,1,1,0,0,-,0.0,1.0,1,0,0,0,0
+tessel-crashbot,628,1,0,0,0,0,create issues to report crashes in the continuous integration|label issues indicating the crash|the generated title is the first line of the crash report,"https://github.com/tessel/t2-cli/issues/1039
+https://github.com/tessel/t2-cli/issues/1040
+https://github.com/tessel/t2-cli/issues/1041
+https://github.com/tessel/t2-cli/issues/1065
+https://github.com/tessel/t2-cli/issues/1066
+https://github.com/tessel/t2-cli/issues/1067
+https://github.com/tessel/t2-cli/issues/1076
+https://github.com/tessel/t2-cli/issues/1078
+https://github.com/tessel/t2-cli/issues/1080",1,0,1,0,1,0,0,-,0.0,1.0,1,0,0,0,0
+knative-housekeeping-robot,598,10,0,0,0,0,"label the issue considering the time of inactivity|comments when issues have a long time of inactivity|closes issues after a certain time of inactivity|commands (e.g., /close) can be performed","https://github.com/knative/build/issues/48
+https://github.com/knative/build/issues/49
+https://github.com/knative/build/issues/52
+https://github.com/chizhg/Algorithms/issues/3
+https://github.com/chizhg/Algorithms/issues/4
+https://github.com/chizhg/Algorithms/issues/5
+https://github.com/knative/build/issues/52
+https://github.com/knative/build/issues/54
+https://github.com/knative/build/issues/68
+https://github.com/knative/build-templates/issues/24
+https://github.com/knative/build-templates/issues/33
+https://github.com/knative/build-templates/issues/5
+https://github.com/knative/docs/issues/1282
+https://github.com/knative/docs/issues/129
+https://github.com/knative/docs/issues/132
+",0,1,1,1,0,0,1,-,0.0,1.0,1,0,0,0,0
+homeassistant,598,16,0,0,0,0,"in home-assistant, each module has a code owner. when an issue is related to certain module (i.e., labeled), the bot mentions the code owner|considering a label, the bot provides the documentation related to that module|assignes the issue for the code owner|label the issue considering the description","https://github.com/home-assistant/android/issues/676
+https://github.com/home-assistant/codeowners-mention/issues/1
+https://github.com/home-assistant/core/issues/23138
+https://github.com/home-assistant/core/issues/78439
+https://github.com/home-assistant/core/issues/78483
+https://github.com/home-assistant/core/issues/78562
+https://github.com/home-assistant/core/issues/78948
+https://github.com/home-assistant/core/issues/78949
+https://github.com/home-assistant/core/issues/78954
+https://github.com/home-assistant/core/issues/78996
+https://github.com/home-assistant/core/issues/78997
+https://github.com/home-assistant/core/issues/79000",0,1,1,0,1,0,0,-,1.0,1.0,1,0,0,0,0
+neos-bot,575,10,0,0,0,0,"it imports issues from jira|import the comments from jira|labels the issues with ""bug""","https://github.com/neos/flow-development-collection/issues/532
+https://github.com/neos/flow-development-collection/issues/533
+https://github.com/neos/flow-development-collection/issues/534
+https://github.com/neos/flow-development-collection/issues/542
+https://github.com/neos/flow-development-collection/issues/543
+https://github.com/neos/flow-development-collection/issues/544
+https://github.com/neos/flow-deveopment-collection/issues/556
+https://github.com/neos/flow-development-collection/issues/557
+https://github.com/neos/flow-development-collection/issues/558
+https://github.com/neos/flow-development-collection/issues/563
+https://github.com/neos/flow-development-collection/issues/564
+https://github.com/neos/flow-development-collection/issues/565",1,1,1,0,0,0,0,not sure if makes sense to report this,0.0,1.0,1,0,0,0,0
+atomist-bot,573,58,0,0,0,0,"creates issues with reports of tslint when errors occur|closes issues when the branch is deleted|assign issues to users|label issues with ""bug""|comments in issues informing about the closure process","https://github.com/atomist/automation-client/issues/418
+https://github.com/atomist/automation-client/issues/420
+https://github.com/atomist/automation-client/issues/422
+https://github.com/atomist/automation-client/issues/436
+https://github.com/atomist/automation-client/issues/439
+https://github.com/atomist/automation-client/issues/440
+https://github.com/atomist/automation-client/issues/463
+https://github.com/atomist/automation-client/issues/467
+https://github.com/atomist/automation-client/issues/479
+https://github.com/atomist/automation-client/issues/501
+https://github.com/atomist/automation-client/issues/502
+https://github.com/atomist/automation-client/issues/504",1,1,1,1,1,0,0,-,1.0,1.0,1,0,0,0,0
+macaca-bot,552,21,0,0,0,0,translate issues and comments,"https://github.com/alibaba/macaca/issues/398
+https://github.com/alibaba/macaca/issues/431
+https://github.com/alibaba/macaca/issues/500
+https://github.com/alibaba/macaca/issues/666
+https://github.com/alibaba/macaca/issues/695
+https://github.com/alibaba/macaca/issues/698
+https://github.com/alibaba/macaca/issues/791
+https://github.com/alibaba/macaca/issues/792
+https://github.com/alibaba/macaca/issues/793
+https://github.com/alibaba/macaca/issues/822
+https://github.com/alibaba/macaca/issues/823
+https://github.com/alibaba/macaca/issues/824",0,1,0,0,1,0,0,not sure if makes sense report this one,0.0,1.0,1,0,0,0,0
+codecov,510,64,0,0,0,0,comments the reports of code coverage analysis,"https://github.com/bitpay/wallet/issues/9477
+https://github.com/bjerkio/oidc-react/issues/970
+https://github.com/bumptech/glide/issues/4939
+https://github.com/del-systems/swatcher/issues/129
+https://github.com/epispot/epispot/issues/57
+https://github.com/ethereumjs/ethereumjs-monorepo/issues/1970
+https://github.com/factcast/factcast/issues/204
+https://github.com/factcast/factcast/issues/206
+https://github.com/factcast/factcast/issues/207",0,1,0,0,1,0,0,-,0.0,1.0,1,0,0,0,0
+sourcegraph-bot,465,12,0,0,0,0,comments in which release certain issue was solved|it opens issues citing pull requests that does not match the requirements of description|it labels the issues indicating that it refers to pull requests ,"https://github.com/sourcegraph/browser-extensions/issues/153
+https://github.com/sourcegraph/browser-extensions/issues/169
+https://github.com/sourcegraph/browser-extensions/issues/174
+https://github.com/sourcegraph/browser-extensions/issues/268
+https://github.com/sourcegraph/browser-extensions/issues/54
+https://github.com/sourcegraph/browser-extensions/issues/58
+https://github.com/sourcegraph/sec-pr-audit-trail/issues/103
+https://github.com/sourcegraph/sec-pr-audit-trail/issues/104
+https://github.com/sourcegraph/sec-pr-audit-trail/issues/105
+https://github.com/sourcegraph/sec-pr-audit-trail/issues/112
+https://github.com/sourcegraph/sec-pr-audit-trail/issues/113
+https://github.com/sourcegraph/sec-pr-audit-trail/issues/114
+",0,1,1,0,0,0,0,-,1.0,1.0,1,0,0,0,0
+nativescript-vue-bot,463,2,0,0,0,0,it locks an issue after 14 days that is was closed,"https://github.com/nativescript-vue/nativescript-vue/issues/160
+https://github.com/nativescript-vue/nativescript-vue/issues/161
+https://github.com/nativescript-vue/nativescript-vue/issues/164
+https://github.com/nativescript-vue/nativescript-vue/issues/207
+https://github.com/nativescript-vue/nativescript-vue/issues/209
+https://github.com/nativescript-vue/nativescript-vue/issues/212
+https://github.com/nativescript-vue/nativescript-vue/issues/216
+https://github.com/nativescript-vue/nativescript-vue/issues/217
+https://github.com/nativescript-vue/nativescript-vue/issues/220
+",0,1,0,0,0,0,0,not sure if makes sense report this one,0.0,1.0,1,0,0,0,1
+RealmBot,461,6,0,0,0,0,closes issues after it is completed,"https://github.com/realm/realm-core/issues/1242
+https://github.com/realm/realm-core/issues/1260
+https://github.com/realm/realm-core/issues/1317
+https://github.com/realm/realm-core/issues/2024
+https://github.com/realm/realm-core/issues/2049
+https://github.com/realm/realm-core/issues/2062
+https://github.com/realm/realm-core/issues/2792
+https://github.com/realm/realm-core/issues/2814
+https://github.com/realm/realm-core/issues/2874",0,1,1,1,1,0,0,i could not find evidence of manual execution|it was not possible to clearly identify what triggers the bot,0.0,1.0,1,0,0,0,0
+shaka-bot,456,4,0,0,0,0,"comments in issues considering the time of inactivity|it closes issues after a certain time of inactivity|label the issue considering the time inactivity|locks the issue after a certain time of inactivity|manages the time of inactivity and mentions the author if the label is ""needs triage""","https://github.com/shaka-project/shaka-packager/issues/385
+https://github.com/shaka-project/shaka-packager/issues/398
+https://github.com/shaka-project/shaka-packager/issues/429
+https://github.com/shaka-project/shaka-packager/issues/438
+https://github.com/shaka-project/shaka-packager/issues/440
+https://github.com/shaka-project/shaka-packager/issues/441
+https://github.com/shaka-project/shaka-packager/issues/548
+https://github.com/shaka-project/shaka-packager/issues/556
+https://github.com/shaka-project/shaka-packager/issues/561
+",0,1,1,1,0,0,1,-,0.0,1.0,1,0,0,0,1
+fluttergithubbot,420,3,0,0,0,0,create issues with reports about flasky tests|assings the issue for the code owner|label the issues considering the severity of the flasky test|run test in pull requests and mentions the issue in the pull request,"https://github.com/chunhtai/flutter/issues/19
+https://github.com/chunhtai/flutter/issues/20
+https://github.com/chunhtai/flutter/issues/21
+https://github.com/chunhtai/flutter/issues/36
+https://github.com/chunhtai/flutter/issues/37
+https://github.com/chunhtai/flutter/issues/39
+https://github.com/flutter/flutter/issues/101058
+https://github.com/flutter/flutter/issues/101059
+https://github.com/flutter/flutter/issues/101426
+https://github.com/flutter/flutter/issues/102234
+https://github.com/flutter/flutter/issues/102236
+https://github.com/flutter/flutter/issues/102660",1,0,1,0,1,0,0,-,1.0,1.0,1,0,0,0,0
+ibmdotcom-bot,384,2,0,0,0,0,-,-,1,1,1,0,0,0,0,-,0.0,0.0,1,0,0,0,0
+google-oss-robot,380,24,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+metal3-io-bot,370,17,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+retest-bot,366,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+mods-bot,366,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+Google-Autofuzz,348,146,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+stencila-ci,333,11,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+pouchrobot,324,7,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+octokitbot,288,23,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+wallabag-bot,287,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+nfbot,272,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+assemblebot,269,27,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+usercont-release-bot,253,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+vscodebot,244,33,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+qiwibot,241,32,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+dictybasebot,230,12,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+mybit-bot,223,13,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+aio-libs-bot,219,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+palashmon,217,59,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+cmsdmwmbot,208,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+pull-bot,207,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+infinitered-circleci,198,14,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+semantic-release-bot,186,23,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+seabird-bot,186,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+SegmentDestinationsBot,181,24,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+travi-bot,172,34,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+greenkeeper,169,79,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+welcome,168,63,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+dhis2-bot,164,29,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+akka-ci,162,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+netoffice-bot,160,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+vis-bot,155,7,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+lock,138,91,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+react-native-community-bot,137,8,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+soloio-bot,132,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+jw-issue-bot,132,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+stoplight-bot,124,10,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+caicloud-bot,120,14,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+antv-bot,119,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+QacoBot,117,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+ApiaryBot,106,5,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+bors,101,40,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
