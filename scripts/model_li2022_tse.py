@@ -201,21 +201,42 @@ class Model1_IssueTracker_Li2022_TSE:
         if self.cuda:
             x = x.cuda()
         output = self.model(x)
+        
         _, predicted = torch.max(output[DEF_MAPPING[tp]], 1)
 
         return DEF_LABELS[predicted.item()]
 
-    def predict_in_batch(self,tp='issue', comments=[], batch_size=128):
+    def predict_in_batch(self,tp='issue', comments=[], batch_size=32):
+        DEF_MAPPING = {DEF_ISSUE: 0, DEF_COMMIT: 1, DEF_COMMENT: 2, DEF_PULL: 3}
+        DEF_LABELS = ['non-SATD', 'code|design-debt', 'requirement-debt', 'documentation-debt', 'test-debt']
+        """
+        Classify a single comment
 
-        # Prepare the comment for classification
-        input_x = np.concatenate([self.comment_pre_processing(x) for x in comments])
+        :param comment:
+        :param tp:
+        """
+        self.model.eval()
+        input_x = self.comment_pre_processing(comment)
+        input_x = input_x + ['<pad>'] * (5 - len(input_x))
+        embed_text = []
+
+        for word in input_x:
+            if word not in self._pure_cache_word_embedding:
+                word_embed = self._pure_word_embedding[word]
+                self._pure_cache_word_embedding[word] = word_embed
+                embed_text.append(word_embed)
+            else:
+                embed_text.append(self._pure_cache_word_embedding[word])
+
+        x = autograd.Variable(torch.tensor(embed_text))
+        x = x.unsqueeze(0)
+        if self.cuda:
+            x = x.cuda()
+        output = self.model(x)
         
-        # Make predictions using the model
-        y_pred = self.model(input_x, batch_size=batch_size, verbose=1)
-        y_pred_ints = np.argmax(y_pred, axis=1)
-    
-        # Print the prediction results
-        return [DEF_LABELS[y] for y in y_pred_ints]
+        _, predicted = torch.max(output[DEF_MAPPING[tp]], 1)
+
+        return DEF_LABELS[predicted.item()]
 
 
 def simple_test(dt):

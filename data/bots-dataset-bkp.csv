@@ -1,5 +1,5 @@
 account,issue_count,n-projects,issues-opening,issues-closing,n-comments,issues-commenting,functionality-descriptive,issues-analyzed,create,comment,label,close,trigger-automated,trigger-manual,trigger-both,other-remarks,assign,completed,is-bot,merge-pr,create-milestone,reopen,lock
-glassfishrobot,56400,125,42506,0,338245,41256,imports issues from jira|it creates issues as placeholders for problems related to pull requests|,"https://github.com/ari-ban/glassfish-genericjmsra/issues/34
+glassfishrobot,56400,125,42506,0,338245,41256,imports issues from jira|it creates issues as placeholders for problems related to pull requests,"https://github.com/ari-ban/glassfish-genericjmsra/issues/34
 https://github.com/ari-ban/glassfish-genericjmsra/issues/35
 https://github.com/ari-ban/glassfish-genericjmsra/issues/36
 https://github.com/alwin-joseph/target-test-jsf-issue-migration/issues/51
@@ -14,7 +14,7 @@ https://github.com/ari-ban/issue-test/issues/1156
 https://github.com/eclipse-ee4j/glassfish-samples/issues/62
 https://github.com/eclipse-ee4j/cargotracker/issues/89
 ",1,1,0,1,1,0,0,-,0.0,1.0,1,0,0,0,0
-k8s-ci-robot,52160,302,0,0,66298,49644,"comments informing about users permissions (e.g., if user gives a command that is not allowed)|","https://github.com/cri-o/cri-o/issues/594
+k8s-ci-robot,52160,302,0,0,66298,49644,"comments informing about users permissions (e.g., if user gives a command that is not allowed)","https://github.com/cri-o/cri-o/issues/594
 https://github.com/GoogleCloudPlatform/kubeflow-distribution/issues/121
 https://github.com/GoogleCloudPlatform/kubeflow-distribution/issues/59
 https://github.com/helm/charts/issues/1618
@@ -22,7 +22,7 @@ https://github.com/helm/charts/issues/1799
 https://github.com/helm/charts/issues/19410
 https://github.com/helm/charts/issues/2920
 https://github.com/helm/charts/issues/3240
-https://github.com/helm/charts/issues/3289",0,1,1,1,0,1,0,interacts with other bot (fejta-bot),0.0,1.0,1,0,0,1,0
+https://github.com/helm/charts/issues/3289",0,1,1,1,0,1,0,interacts with other bot (fejta-bot),0.0,1.0,1,0,0,0,0
 brotherlogic,37635,139,37736,0,124,108,-,"https://github.com/adafruit/Python-Thermal-Printer/issues/49
 https://github.com/brotherlogic/advent/issues/11
 https://github.com/brotherlogic/advent/issues/15
@@ -52,7 +52,7 @@ https://github.com/brotherlogic/adventofcode/issues/30
 https://github.com/brotherlogic/adventofcode/issues/32
 https://github.com/brotherlogic/adventofcode/issues/33
 https://github.com/brotherlogic/adventofcode/issues/34",0,0,0,1,1,0,0,it seems to be a person,1.0,1.0,0,0,0,0,0
-fejta-bot,34736,224,195,0,93992,34164,"monitors the time that an issue is open and provide commands regarding this time (e.g., /close, /label)","https://github.com/helm/charts/issues/1001
+fejta-bot,34736,224,195,0,93992,34164,"monitors the time that an issue is openp|provide commands regarding this time (e.g., /close, /label)","https://github.com/helm/charts/issues/1001
 https://github.com/helm/charts/issues/1005
 https://github.com/helm/charts/issues/1016
 https://github.com/helm/charts/issues/1020
@@ -61,7 +61,7 @@ https://github.com/helm/charts/issues/1070
 https://github.com/helm/charts/issues/1071
 https://github.com/helm/charts/issues/1073
 https://github.com/helm/charts/issues/1075",0,0,1,0,1,0,0,-,0.0,1.0,1,0,0,0,0
-gopherbot,27453,11,5430,0,47068,25240,comment references for a certain issue mentioned in the golang issue tracker|import comments from golang issue tracker|push commits,"https://github.com/golang/dep/issues/300
+gopherbot,27453,11,5430,0,47068,25240,comment references for a certain issue mentioned in the golang issue tracker|import comments from golang issue tracker|push commits|backport issues,"https://github.com/golang/dep/issues/300
 https://github.com/golang/go/issues/1
 https://github.com/golang/go/issues/10
 https://github.com/golang/go/issues/100
@@ -69,8 +69,8 @@ https://github.com/golang/go/issues/1001
 https://github.com/golang/go/issues/10010
 https://github.com/golang/go/issues/1002
 https://github.com/golang/go/issues/10029
-https://github.com/golang/go/issues/10048",0,1,1,1,0,0,1,-,0.0,1.0,1,-,0,0,0
-fire-bot,15794,337,15837,0,0,0,create issues via email,"https://github.com/acketon/poptheme1/issues/1
+https://github.com/golang/go/issues/10048",1,1,1,1,0,0,1,-,0.0,1.0,1,0,0,0,0
+fire-bot,15794,337,15837,0,0,0,"users can send and e-mail to the bot, who will create an issue in the project","https://github.com/acketon/poptheme1/issues/1
 https://github.com/adriannier/eruption/issues/1
 https://github.com/adriannier/eruption/issues/2
 https://github.com/adriannier/eruption/issues/3
@@ -78,7 +78,7 @@ https://github.com/AirFM/Windows-App/issues/1
 https://github.com/ajency/CIBIL-CRO/issues/4
 https://github.com/ajency/CIBIL-CRO/issues/6
 https://github.com/ajency/HK-Retail-Adhocs/issues/1
-https://github.com/ajency/HK-Retail-Adhocs/issues/10",1,0,0,1,1,0,0,-,0.0,1.0,1,-,0,0,0
+https://github.com/ajency/HK-Retail-Adhocs/issues/10",1,0,0,1,1,0,0,-,0.0,1.0,1,0,0,0,0
 DartBot,15148,42,11302,0,33593,12034,move issues from one project to another|close issues|label issues,"https://github.com/dart-archive/barback/issues/10
 https://github.com/dart-archive/barback/issues/11
 https://github.com/dart-archive/barback/issues/12
@@ -87,7 +87,7 @@ https://github.com/dart-archive/barback/issues/14
 https://github.com/dart-archive/barback/issues/15
 https://github.com/dart-archive/barback/issues/16
 https://github.com/dart-archive/barback/issues/17
-https://github.com/dart-archive/barback/issues/18",1,0,1,1,1,0,0,-,0.0,1.0,1,-,0,0,0
+https://github.com/dart-archive/barback/issues/18",1,0,1,1,1,0,0,-,0.0,1.0,1,0,0,0,0
 cf-gitbot,15123,1050,755,0,13487,13123,label issues|import issues from github to pivotal,"https://github.com/cf-platform-eng/concourse-pypi-resource/issues/14
 https://github.com/cf-platform-eng/concourse-pypi-resource/issues/25
 https://github.com/cf-platform-eng/concourse-pypi-resource/issues/26
@@ -320,7 +320,7 @@ https://github.com/jekyll/github-metadata/issues/168
 https://github.com/jekyll/github-metadata/issues/169
 https://github.com/jekyll/github-metadata/issues/209
 https://github.com/jekyll/github-metadata/issues/223
-",1,1,1,1,1,0,0,0,0.0,1.0,1,-,0,0,0
+",1,1,1,1,1,0,0,0,0.0,1.0,1,0,0,0,0
 az-iot-builder-01,1681,7,0,0,0,0,closes issues when they are complete|comments on issues asking for feedback about the contribution process|,"https://github.com/Azure/azure-c-shared-utility/issues/164
 https://github.com/Azure/azure-c-shared-utility/issues/168
 https://github.com/Azure/azure-c-shared-utility/issues/174
@@ -652,18 +652,116 @@ https://github.com/flutter/flutter/issues/101426
 https://github.com/flutter/flutter/issues/102234
 https://github.com/flutter/flutter/issues/102236
 https://github.com/flutter/flutter/issues/102660",1,0,1,0,1,0,0,-,1.0,1.0,1,0,0,0,0
-ibmdotcom-bot,384,2,0,0,0,0,-,-,1,1,1,0,0,0,0,-,0.0,0.0,1,0,0,0,0
-google-oss-robot,380,24,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-metal3-io-bot,370,17,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-retest-bot,366,3,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-mods-bot,366,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-Google-Autofuzz,348,146,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-stencila-ci,333,11,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-pouchrobot,324,7,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-octokitbot,288,23,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-wallabag-bot,287,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-nfbot,272,1,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-assemblebot,269,27,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+ibmdotcom-bot,384,2,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,0,0,0,0
+google-oss-robot,380,24,0,0,0,0,assign the issue to the user that comment /assign|closes the issue after a command|comments the details about the closure process|label issues after a command,"https://github.com/google/exposure-notifications-server/issues/530
+https://github.com/google/exposure-notifications-server/issues/545
+https://github.com/google/exposure-notifications-server/issues/555
+https://github.com/google/exposure-notifications-server/issues/594
+https://github.com/google/exposure-notifications-server/issues/595
+https://github.com/google/exposure-notifications-server/issues/596
+https://github.com/google/exposure-notifications-server/issues/699
+https://github.com/google/exposure-notifications-server/issues/712
+https://github.com/google/exposure-notifications-server/issues/723
+https://github.com/google/exposure-notifications-server/issues/955
+https://github.com/google/exposure-notifications-server/issues/956
+https://github.com/google/exposure-notifications-server/issues/965",0,1,1,1,0,1,0,-,1.0,1.0,1,0,0,0,0
+metal3-io-bot,370,17,0,0,0,0,"label issues with ""needs-triage"" after it is open|label issues after commands|close issues after commands|comments, close, and label issues considering a certain time of inactivity","https://github.com/metal3-io/baremetal-operator/issues/1079
+https://github.com/metal3-io/baremetal-operator/issues/1082
+https://github.com/metal3-io/baremetal-operator/issues/1084
+https://github.com/metal3-io/baremetal-operator/issues/1177
+https://github.com/metal3-io/baremetal-operator/issues/1182
+https://github.com/metal3-io/baremetal-operator/issues/1187
+https://github.com/metal3-io/baremetal-operator/issues/242
+https://github.com/metal3-io/baremetal-operator/issues/246
+https://github.com/metal3-io/baremetal-operator/issues/269",0,1,1,0,0,0,1,-,0.0,1.0,1,0,0,0,0
+retest-bot,366,3,0,0,0,0,"it commands other bots to label, close, reopen, and label issues","https://github.com/cert-manager/cert-manager/issues/1139
+https://github.com/cert-manager/cert-manager/issues/1155
+https://github.com/cert-manager/cert-manager/issues/1168
+https://github.com/cert-manager/cert-manager/issues/1298
+https://github.com/cert-manager/cert-manager/issues/132
+https://github.com/cert-manager/cert-manager/issues/1320
+https://github.com/cert-manager/cert-manager/issues/1424
+https://github.com/cert-manager/cert-manager/issues/1430
+https://github.com/cert-manager/cert-manager/issues/1432",0,1,0,0,0,0,1,-,0.0,1.0,1,0,0,0,0
+mods-bot,366,1,0,0,0,0,dos not worth to report,"https://github.com/nusmodifications/nusmods/issues/1146
+https://github.com/nusmodifications/nusmods/issues/1147
+https://github.com/nusmodifications/nusmods/issues/1148
+https://github.com/nusmodifications/nusmods/issues/1174
+https://github.com/nusmodifications/nusmods/issues/1176
+https://github.com/nusmodifications/nusmods/issues/1177
+https://github.com/nusmodifications/nusmods/issues/1197
+https://github.com/nusmodifications/nusmods/issues/1198
+https://github.com/nusmodifications/nusmods/issues/1207
+https://github.com/nusmodifications/nusmods/issues/1230
+https://github.com/nusmodifications/nusmods/issues/1233
+https://github.com/nusmodifications/nusmods/issues/1249",1,0,1,0,0,0,0,"does not worth to report it, because it reproduces solicitations from a website to update data https://nusmods.com/timetable/sem-2",0.0,1.0,1,0,0,0,0
+Google-Autofuzz,348,146,0,0,0,0,"open issus reporting problems in integrating a new commit|it provides the  a description of the problem, and instructions for reproduce the error and solve it","https://github.com/AcademySoftwareFoundation/openexr/issues/260
+https://github.com/AcademySoftwareFoundation/openexr/issues/261
+https://github.com/AcademySoftwareFoundation/openexr/issues/262
+https://github.com/AcademySoftwareFoundation/openexr/issues/719
+https://github.com/AcademySoftwareFoundation/openexr/issues/720
+https://github.com/AcademySoftwareFoundation/openexr/issues/721
+https://github.com/alembic/alembic/issues/269
+https://github.com/alembic/alembic/issues/270
+https://github.com/alembic/alembic/issues/271",1,0,0,0,1,0,0,it is not clear how the process behind the bot happens,0.0,1.0,1,0,0,0,0
+stencila-ci,333,11,0,0,0,0,comments in which release certain issue was solved|commits changes|label issues that are released|commits pull requests,"https://github.com/stencila/dockta/issues/136
+https://github.com/stencila/dockta/issues/14
+https://github.com/stencila/dockta/issues/27
+https://github.com/stencila/dockta/issues/77
+https://github.com/stencila/encoda/issues/100
+https://github.com/stencila/encoda/issues/103
+https://github.com/stencila/encoda/issues/204
+https://github.com/stencila/encoda/issues/214
+https://github.com/stencila/encoda/issues/216
+https://github.com/stencila/encoda/issues/368
+https://github.com/stencila/encoda/issues/381
+https://github.com/stencila/encoda/issues/388
+",0,1,1,0,1,0,0,it is not so clear which changes the bot commit,0.0,1.0,1,0,0,0,0
+pouchrobot,324,7,0,0,0,0,"checks if an issue meets community's requeirements (e.g., minimum characters in the title)|labels issues that require more information|create issues with a report on the activities of the week on the project (e.g., issues fixed, merges, new contributors, etc)|labels the reports with a specific label|label issues considering the level os severity|notify the users when a high priority issue is opened|assigns issues to users after a command","https://github.com/alibaba/pouch/issues/1062
+https://github.com/alibaba/pouch/issues/1083
+https://github.com/alibaba/pouch/issues/1096
+https://github.com/alibaba/pouch/issues/1421
+https://github.com/alibaba/pouch/issues/1443
+https://github.com/alibaba/pouch/issues/1449
+https://github.com/alibaba/pouch/issues/1580
+https://github.com/alibaba/pouch/issues/1584
+https://github.com/alibaba/pouch/issues/162
+https://github.com/alibaba/pouch/issues/1907
+https://github.com/alibaba/pouch/issues/1919
+https://github.com/alibaba/pouch/issues/1920
+",1,1,1,1,0,0,1,it seems to have any kind of nlp,1.0,1.0,1,0,0,0,0
+octokitbot,288,23,0,0,0,0,comments in which release certain issue was solved|labels issues regarding when it is released|opens issues if the release process fails|manage projects moving tickets in the dashboard,"https://github.com/octokit/auth-app.js/issues/29
+https://github.com/octokit/auth-app.js/issues/6
+https://github.com/octokit/auth-oauth-app.js/issues/12
+https://github.com/octokit/app.js/issues/9
+https://github.com/octokit/auth-app.js/issues/16
+https://github.com/octokit/auth-app.js/issues/2
+https://github.com/octokit/fixtures-server/issues/29
+https://github.com/octokit/graphql-action/issues/126
+https://github.com/octokit/graphql-action/issues/128
+https://github.com/octokit/graphql.js/issues/45
+https://github.com/octokit/graphql.js/issues/49
+https://github.com/octokit/graphql.js/issues/50",1,1,1,1,1,0,0,manages projects in github,0.0,1.0,1,0,0,0,0
+wallabag-bot,287,1,0,0,0,0,"users can send and e-mail to the bot, who will create an issue in the project","https://github.com/wallabag/wallabag/issues/4118
+https://github.com/wallabag/wallabag/issues/4120
+https://github.com/wallabag/wallabag/issues/4322
+https://github.com/wallabag/wallabag/issues/4108
+https://github.com/wallabag/wallabag/issues/4110
+https://github.com/wallabag/wallabag/issues/4112
+https://github.com/wallabag/wallabag/issues/4407
+https://github.com/wallabag/wallabag/issues/4408
+https://github.com/wallabag/wallabag/issues/4426",1,0,1,0,1,0,0,not sure if it worth to report,0.0,1.0,1,0,0,0,0
+nfbot,272,1,0,0,0,0,it manages the steps until a new release|labels the issues considering the status of its progress,"https://github.com/nanoframework/Home/issues/102
+https://github.com/nanoframework/Home/issues/103
+https://github.com/nanoframework/Home/issues/1038
+https://github.com/nanoframework/Home/issues/104
+https://github.com/nanoframework/Home/issues/105
+https://github.com/nanoframework/Home/issues/106
+https://github.com/nanoframework/Home/issues/132
+https://github.com/nanoframework/Home/issues/133
+https://github.com/nanoframework/Home/issues/134
+",1,1,1,1,1,0,0,not sure if it worths to report,0.0,1.0,1,0,0,0,0
+assemblebot,269,27,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,0,0,0,0
 usercont-release-bot,253,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
 vscodebot,244,33,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
 qiwibot,241,32,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
