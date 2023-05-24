@@ -894,9 +894,36 @@ https://github.com/semantic-release/commit-analyzer/issues/122
 https://github.com/semantic-release/git/issues/155
 https://github.com/semantic-release/git/issues/62
 https://github.com/semantic-release/git/issues/68",0,1,1,0,1,0,0,not sure if it is worth to release,0.0,1.0,1,0,0,0,0
-seabird-bot,186,9,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,0,0,0,0
-SegmentDestinationsBot,181,24,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
-travi-bot,172,34,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
+seabird-bot,186,9,0,0,0,0,imports issues from other platform,"https://github.com/belak/go-seabird/issues/101
+https://github.com/belak/go-seabird/issues/103
+https://github.com/belak/go-seabird/issues/105
+https://github.com/belak/go-seabird/issues/149
+https://github.com/belak/go-seabird/issues/151
+https://github.com/belak/go-seabird/issues/153
+https://github.com/belak/go-seabird/issues/166
+https://github.com/belak/go-seabird/issues/173
+https://github.com/belak/go-seabird/issues/175
+https://github.com/belak/go-seabird/issues/180
+https://github.com/belak/go-seabird/issues/181
+https://github.com/belak/go-seabird/issues/182
+https://github.com/belak/go-seabird/issues/190
+https://github.com/belak/go-seabird/issues/196
+https://github.com/belak/go-seabird/issues/197",1,0,0,0,1,0,0,it was not possible to understand from where the issues come from,0.0,1.0,1,0,0,0,0
+SegmentDestinationsBot,181,24,0,0,0,0,migrates issues from one project to other|notify users about issues|labels issues that were migrated|mentions the migrated issue on the new created issue,"https://github.com/segment-integrations/analytics.js-integration-facebook-pixel/issues/38
+https://github.com/segment-integrations/analytics.js-integration-facebook-pixel/issues/40
+https://github.com/segment-integrations/analytics.js-integration-google-analytics/issues/24
+https://github.com/segment-integrations/analytics.js-integration-heap/issues/16
+https://github.com/segment-integrations/analytics.js-integration-hubspot/issues/14
+https://github.com/segment-integrations/analytics.js-integration-hubspot/issues/17
+https://github.com/segment-integrations/analytics.js-integration-keen-io/issues/1
+https://github.com/segment-integrations/analytics.js-integration-keen-io/issues/17
+https://github.com/segment-integrations/analytics.js-integration-keen-io/issues/2",1,1,1,0,1,0,0,-,0.0,1.0,1,0,0,0,0
+travi-bot,172,34,0,0,0,0,comments which release includes the changes made in a certain issue|label the issues that were released|report problems in releases|releases the project automatically,"https://github.com/form8ion/javascript-scaffolder/issues/99
+https://github.com/form8ion/project/issues/112
+https://github.com/form8ion/project/issues/118
+https://github.com/form8ion/javascript-scaffolder/issues/139
+https://github.com/form8ion/javascript-scaffolder/issues/147
+https://github.com/form8ion/javascript-scaffolder/issues/15",1,1,0,1,1,0,0,not sure if it is worth to report,0.0,1.0,1,0,0,0,0
 greenkeeper,169,79,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
 welcome,168,63,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
 dhis2-bot,164,29,0,0,0,0,-,-,0,0,0,0,0,0,0,-,0.0,0.0,1,-,0,0,0
