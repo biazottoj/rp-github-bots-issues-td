@@ -3,12 +3,11 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 
-def create_dataset_row(bot, issue, text_section='title', is_comment=False, comment_number=None, owner=None, project=None): 
+def create_dataset_row(bot, issue, text_section='title', is_comment=False, comment_number=None, owner_project=None): 
     if not is_comment:
         return {
             "bot":bot,
-            'owner': owner,
-            'project': project,
+            'owner_project': owner_project,
             'issue' : issue['number'],
             'text' : issue[text_section],
             'type' : text_section,
@@ -18,13 +17,12 @@ def create_dataset_row(bot, issue, text_section='title', is_comment=False, comme
             'state' : issue['state'],
             'close-date': issue['closed_at'],
             'closed-by': issue['closed_by']['login'] if issue['closed_by'] != None else '-',
-            'td-label': '-'
+            'td-label-li2022-emse': issue['td-label-li2022-emse']
         }
     
     return {
             "bot":bot,
-            'owner': owner,
-            'project': project,
+            'owner_project': owner_project,
             'issue' : issue['issue_url'].split('/')[-1],
             'text' : issue['body'],
             'type' : f'comment_{comment_number}',
@@ -33,7 +31,7 @@ def create_dataset_row(bot, issue, text_section='title', is_comment=False, comme
             'state' : '-',
             'close-date' :'-',
             'closed-by': '-',
-            'td-label': '-'
+            'td-label-li2022-emse': issue['td-label-li2022-emse']
         }
 def requests_retry_session(retries=5, backoff_factor=5, session=None):
     """
