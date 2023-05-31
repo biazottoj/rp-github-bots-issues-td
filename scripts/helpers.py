@@ -8,8 +8,8 @@ def create_dataset_row(bot, issue, text_section='title', is_comment=False, comme
         return {
             "bot":bot,
             'owner_project': owner_project,
-            'issue' : issue['number'],
-            'text' : issue[text_section],
+            'issue' : '-' if 'issue' not in issue.keys() else issue['number'],
+            'text' : '-' if 'issue' not in issue.keys() else issue[text_section],
             'type' : text_section,
             'n-comments': issue['comments'],
             'author-login': issue['user']['login'],
@@ -17,7 +17,7 @@ def create_dataset_row(bot, issue, text_section='title', is_comment=False, comme
             'state' : issue['state'],
             'close-date': issue['closed_at'],
             'closed-by': issue['closed_by']['login'] if issue['closed_by'] != None else '-',
-            'td-label-li2022-emse': issue['td-label-li2022-emse']
+            'td-label-li2022-emse': '-' if 'td-label-li2022-emse' not in issue.keys() else issue['td-label-li2022-emse']
         }
     
     return {
@@ -31,7 +31,7 @@ def create_dataset_row(bot, issue, text_section='title', is_comment=False, comme
             'state' : '-',
             'close-date' :'-',
             'closed-by': '-',
-            'td-label-li2022-emse': issue['td-label-li2022-emse']
+            'td-label-li2022-emse': '-' if 'td-label-li2022-emse' not in issue.keys() else issue['td-label-li2022-emse']
         }
 def requests_retry_session(retries=5, backoff_factor=5, session=None):
     """
